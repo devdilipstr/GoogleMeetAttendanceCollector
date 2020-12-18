@@ -1,0 +1,29 @@
+{
+    "manifest_version":2,
+    "name":"Meet Attendance Collector",
+    "description":"Now It's So Easy to collect your meet attendance in just a single click in Excel and Text Format.",
+    "version":"1.0",
+    "browser_action":{
+        "default_popup":"popup.html"
+    },
+    "icons":{
+        "16":"icon_16.png",
+        "48":"icon_48.png",
+        "128":"icon_128.png"
+    },
+    "permissions":[
+        "downloads",
+        "tabs"
+    ],
+    "content_scripts":[
+     {
+        "matches":[
+            "https://meet.google.com/*"
+        ],
+        "js":["content.js","FileSaver.js","xlsx.full.min.js"]
+     }
+    ],
+    "background":{
+        "scripts":["bg.js","FileSaver.js"]
+    }
+}

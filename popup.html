@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <title>PopUp for meet attendance</title>
+    <link rel="stylesheet" href="style.css">    
+    
+</head>
+<body>
+      <div class="container">
+            <div class="head">
+                <p id="heading">Meet attendance collector</p>
+            </div>
+            <div class="vector">
+                <img alt="art" src="vector.svg" width="200px" />
+            </div>
+            <div class="display-true">
+                <div class="guide">
+                 <p id="meeting">yxf-yfs-ksv</p>
+                </div>
+                <div class="current-number">
+                <p id="active"></p>
+                </div>
+                <div class="collectors">
+                <span style="margin: 1%;"> 
+                   <p>Export Attendance As</p>
+                </span>
+                <button class="custom-btn" id="refresh"><i class="fas fa-retweet" style="background-color: 080118;"></i>
+
+                </button>
+                <span class="buttonTile">
+                 <button class="custom-btn" id="asSheets">AS SHEET</button>
+                 <button class="custom-btn" id="astxt">AS TEXT</button>
+                </span>
+                </div> 
+                
+            </div>
+            <div class="display-false" hidden=true>
+                <p>Please Use This Extention On Meet Page</p>
+            </div>
+            
+      <div class="copyright" style="opacity: .2;text-align: center;">
+        <p>xenon &copy; 2020</p>
+        </div>
+      </div>
+      
+</body>
+<script src="pop.js" defer></script>    
+<scrip src="FileSaver.js" defer></scrip>
+
+</html>
